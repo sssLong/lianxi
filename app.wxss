@@ -1,0 +1,94 @@
+page{
+	font-family:"微软雅黑";
+	background: #f5f5f5;
+}
+
+view,text,navigator,image{
+	border:0;
+	margin:0;
+	padding:0;
+}
+/*  头部  */
+
+.head {
+    width: 100%;
+    max-width: 1920rpx;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 90rpx;
+    line-height: 90rpx;
+    font-size: 36rpx;
+    color: #000;
+    letter-spacing: 2rpx;
+    background: #fff;
+    text-align: center;
+    z-index: 3;
+    border-bottom: 2rpx solid #d2d2d2;
+}
+
+.often-text {
+    height: 80rpx;
+    line-height: 80rpx;
+    width: 234rpx;
+    display: inline-block;
+}
+
+.often-jump {
+    display: block;
+    width: 60rpx;
+    height: 60rpx;
+    position: absolute;
+    right: 16rpx;
+    top: 20rpx;
+}
+
+.often-jump image{
+    width:48rpx;
+    height:48rpx;
+    display: block;
+}
+
+/*  返回图标  */
+.back-icon {
+    position: absolute;
+    left: 2%;
+    top: 14rpx;
+    width: 60rpx;
+    height: 60rpx;
+}
+
+.back-icon image {
+    display: block;
+    width: 48rpx;
+    height: 48rpx;
+    position: relative;
+    left: 6rpx;
+    top: 6rpx;
+}
+
+/*  遮罩  */
+.mask{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.5;
+    z-index: 4;
+}
+
+/* 加载图标 */
+.load-icon{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+    background: url(../../../../image/load.gif) no-repeat 0 0;
+    display: block;
+    z-index: 6;
+}

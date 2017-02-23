@@ -1,0 +1,55 @@
+<!-- 搜索  -->
+<view class="head">
+    <view class="city-select">
+        <image src="../../image/map-icon.png" class="city-icon"></image>
+        <text class="now-city">深圳</text>
+    </view>
+    <navigator class="search-son" href="">
+        <image src="../../image/search.png"></image>
+        <text>搜索商品</text>
+    </navigator>
+    <navigator class="new-notice" href="html/news-center.html">
+        <image src="../../image/xiao.png"></image>
+        <text></text>
+    </navigator>
+</view>
+<!-- banner-->
+<swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{4000}}" duration="{{500}}" class="banner" style="width:{{mainWidth}}px;height:{{mainWidth/2.027}}px">
+    <block wx:for="{{imgUrl}}">
+        <swiper-item>
+            <image src="{{item}}" class="banner-img"></image>
+        </swiper-item>
+    </block>
+</swiper>
+<!-- 导航 -->
+<view class="index-main-all">
+    <navigator wx:for="{{mainList}}" class="index-main-list" url="{{item.toUrl}}">
+        <image src="{{item.url}}" class="index-main-icon"></image>
+        <p class="index-main-text">{{item.text}}</p>
+    </navigator>
+</view>
+<!-- 活动区域  -->
+<view class="all-activity">
+    <view hidden="{{special.specialFlag}}" class="specail-mai activity">
+        <view class="activity-head">
+            <image src="../../image/special-head.png" class="head-img"></image>
+        </view>
+        <navigator class="activity-imgbox" style="width:{{mainWidth}}px;height:{{mainWidth/3.14}}px">
+            <image src="{{special.specialImg}}" class="activity-img"></image>
+        </navigator>
+    </view>
+    <view class="hot-goods activity">
+        <view class="activity-head">
+            <image src="../../image/hot-head.png" class="head-img"></image>
+        </view>
+        <view class="hot-goods-box">
+            <block wx:for="{{hotGoods}}">
+                <navigator class="hot-goods-list">
+                    <image src="{{item.url}}" class="hot-goods-img"></image>
+                    <text class="hot-goods-name">{{item.name}}</text>
+                    <text class="hot-goods-price">{{item.price + "元"}}</text>
+                </navigator>
+            </block>
+        </view>
+    </view>
+</view>

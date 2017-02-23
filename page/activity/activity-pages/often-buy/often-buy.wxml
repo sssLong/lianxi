@@ -1,0 +1,14 @@
+<!--   头部  -->
+<import src="../../../../compenent/goods-list.wxml"/>
+<template is="head" data="{{name:'我常买',flag:false}}"/>
+<!-- 商品列表  -->
+<view class="kind-list" style="margin-top:45px">
+    <template is="goodsAll" data="{{foodAll,nowNum,is_coll,mainHeight}}"/>
+</view>
+<!-- 放大区  -->
+<template is="bigShow" data="{{...bigArea,foodFlag}}"/>
+
+<!-- 遮罩  -->
+<view class="mask" hidden="{{flag}}"></view>
+<!-- 加载图标  -->
+<view class="load-icon" hidden="{{flag}}"></view>

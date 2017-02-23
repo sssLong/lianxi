@@ -1,0 +1,54 @@
+<template name="head">
+    <view class="head">
+        <navigator class="back-icon" open-type="switchTab" url="../../index" hidden="{{flag}}">
+            <image src="../../../../image/left-icon.jpg"></image>
+        </navigator>
+        <text class="often-text">{{name}}</text>
+        <navigator class="often-jump" open-type="redirect" url="">
+            <image src="../../../../image/food-car.png"></image>
+        </navigator>
+    </view>
+</template>
+<template name="goodsAll">
+    <scroll-view class="kind-main" bindscrolltolower="loadMore" scroll-y="true"  style="height:{{mainHeight*2}}rpx">
+        <view class="food-all" wx:for="{{foodAll}}">
+            <view class="food">
+                <view class="food-left">
+                    <image class="true" src="{{item.small_image_path}}" id="2101" bindtap="bigShow" data-big-area="{{item.goods_name +'?'+ item.goods_describe+ '?' +item.price+ '?' +item.unit_name+ '?' +item.image_path}}"></image>
+                    <p wx:if="{{item.min_qty!='0.00'}}"><i>{{item.min_qty}}</i><em>{{item.unit_name}}</em>起购</p>
+                    <image class="special-log" src="../../../../image/special.png" wx:if="{{item.is_special_offer == '1'}}"></image>
+                </view>
+                <view class="food-right">
+                    <view class="food-coll">
+                        <image class="kind-coll" src="{{is_coll}}" bindtap="collection"></image>
+                    </view>
+                    <view class="food-name"><em>{{item.goods_name}}</em></view>
+                    <p class="food-intr">{{item.goods_describe}}</p>
+                    <span class="food-price">￥<i>{{item.price}}</i>元/<b>{{item.unit_name}}</b></span>
+                    <view class="price" wx:if="{{item.is_special_offer == '1'}}">
+                        <text>市价:</text><s>￥<em>{{item.special_offer_price}}</em>/<i>{{item.unit_name}}</i><line></line></s>
+                    </view>
+                </view>
+            </view>
+            <view class="food-buy">
+                <ul class="food-number">
+                    <li class="yellow some-style" bindtap="subQty" data-now-num="{{nowNum}}">－</li>
+                    <input class="num some-style" value="{{nowNum}}" bindinput="changeNum" type="number" maxlength="3" />
+                    <li class="last some-style" bindtap="addQty" data-now-num="{{nowNum}}">＋</li>
+                </ul>
+                <view class="food-car">加入购物车</view>
+            </view>
+        </view>
+    </scroll-view>
+</template>
+<template name="bigShow">
+    <view class="big-box" hidden="{{foodFlag}}">
+        <view class="big-mirror">
+            <image src="../../../../image/close.png" id="mirror_close" bindtap="closeShow"></image>
+            <image src="{{image_path}}" id="image"></image>
+            <view><em>{{name}}</em></view>
+            <p>{{describe}}</p>
+            <span>单价:￥<i>{{price}}</i>元/<b>{{unit}}</b></span>
+        </view>
+    </view>
+</template>

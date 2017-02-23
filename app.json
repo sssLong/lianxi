@@ -1,0 +1,52 @@
+{
+	"pages":[
+		"page/activity/index",
+		"page/classifying/index/index",
+        "page/shopping-car/index/index",
+        "page/my/index/index",
+
+        "page/activity/activity-pages/often-buy/often-buy"
+	],
+    "window": {
+        "navigationBarTextStyle": "#fff",
+        "navigationBarTitleText": "食材在线",
+        "navigationBarBackgroundColor": "#000",
+        "backgroundColor": "#fbf9fe",
+        "enablePullDownRefresh":true,
+        "backgroundTextStyle":"dark"
+    },
+    "tabBar": {
+        "color": "#dddddd",
+        "selectedColor": "#3cc51f",
+        "borderStyle": "black",
+        "backgroundColor": "#ffffff",
+        "list": [{
+            "pagePath": "page/activity/index",
+            "iconPath": "image/first.png",
+            "selectedIconPath": "image/first-active.png",
+            "text": "首页"
+        }, {
+            "pagePath": "page/classifying/index/index",
+            "iconPath": "image/kind.png",
+            "selectedIconPath": "image/kind-active.png",
+            "text": "分类"
+        }, {
+            "pagePath": "page/shopping-car/index/index",
+            "iconPath": "image/food-car.png",
+            "selectedIconPath": "image/food-car-active.png",
+            "text": "购物车"
+        }, {
+            "pagePath": "page/my/index/index",
+            "iconPath": "image/user-center.png",
+            "selectedIconPath": "image/user-center-active.png",
+            "text": "我的"
+        }]
+    },
+    "networkTimeout": {
+        "request": 10000,
+        "connectSocket": 10000,
+        "uploadFile": 10000,
+        "downloadFile": 10000
+    },
+    "debug": true
+}

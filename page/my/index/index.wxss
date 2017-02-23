@@ -1,0 +1,193 @@
+/*  个人中心  */
+page{
+    background: #fff;
+}
+.user-user {
+    width: 100%;
+    overflow: scroll;
+    margin-top: 112rpx;
+    padding-bottom: 20rpx;
+    position: relative;
+}
+.user-sign{
+    position: absolute;
+    right:40rpx;
+    top:16rpx;
+    width:174rpx;
+    height:52rpx;  
+}
+.have-sign{
+    background: url(../../../image/sign.png) no-repeat 0 0/174rpx 52rpx;
+}
+.no-sign{
+    background: url(../../../image/no-sign.png) no-repeat 0 0/174rpx 52rpx;
+}
+.user-user-box {
+    width: 280rpx;
+    height: 320rpx;
+    background: white;
+    margin: 0 auto;
+}
+
+.user-user-photo {
+    width: 100%;
+}
+
+.user-user-photo image {
+    display: block;
+    border-radius: 90rpx;
+    width: 180rpx;
+    height: 180rpx;
+    margin: 0 auto;
+}
+
+.user-user-name {
+    width: 100%;
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: center;
+    font-size: 36rpx;
+}
+
+.user-edit {
+    display: block;
+    margin: 0 auto;
+    height: 60rpx;
+    width: 200rpx;
+    margin-top: -12rpx;
+    padding-left: 8rpx;
+}
+
+.user-edit span {
+    color: #f9b24a;
+    font-size: 28rpx;
+    display: inline-block;
+    float: left;
+    margin: 4rpx 6rpx 0 12rpx;
+}
+
+.user-edit image {
+    display: inline-block;
+    width: 44rpx;
+    height: 44rpx;
+    float: left;
+}
+
+.user-user-main {
+    width: 100%;
+    background: white;
+}
+
+.user-user-main a {
+    width: 100%;
+    height: 102rpx;
+    display: block;
+}
+
+.user-user-main view {
+    position: relative;
+    height: 100rpx;
+    border-top: 2rpx solid #f2f2f2;
+    background: url(../../../image/right-icon.png) no-repeat 97% 28rpx;
+}
+
+.user-user-main image {
+    display: block;
+    float: left;
+    width:54rpx;
+    height:54rpx;
+    padding:24rpx 0 0 26rpx;
+    margin-right: 24rpx;
+}
+
+.user-user-main span {
+    display: block;
+    margin-left: 100rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    width: 200rpx;
+    color:#000;
+    font-size: 32rpx;
+}
+
+.user-order {
+    height: 150rpx;
+    border-top: 2rpx solid #f2f2f2;
+    display: block;
+}
+
+.user-order li {
+    display: block;
+    float: left;
+    height: 100%;
+    line-height: 150rpx;
+    font-size: 36rpx;
+    width: 33.3%;
+    text-align: center;
+}
+
+.user-order li a {
+    color: #999;
+}
+
+.user-my-order p {
+    display: block;
+    position: absolute;
+    right: 10%;
+    height: 100rpx;
+    line-height: 100rpx;
+    top: 0;
+    color: #999;
+}
+
+.user-assets {
+    display:block;
+    height: 120rpx;
+    border-top: 2rpx solid #f2f2f2;
+}
+
+.user-assets li {
+    display: block;
+    width: 33.3%;
+    height: 100%;
+    float: left;
+}
+
+.user-assets span {
+    text-align: center;
+    display: block;
+    font-size: 28rpx;
+    height: 56rpx;
+    line-height: 68rpx;
+    margin-left: 0;
+    width: 100%;
+    color: #f9b24a;
+}
+
+.user-assets p {
+    display: block;
+    text-align: center;
+    height: 44rpx;
+    line-height: 44rpx;
+    font-size: 28rpx;
+    color: #999;
+}
+
+
+/*  积分 */
+.user-points{
+    position: fixed;
+    width:70%;
+    height:88rpx;
+    left:15%;
+    bottom: 100rpx;
+    border-radius: 44rpx;
+    background: #fe9b00;
+    text-align: center;
+    line-height: 88rpx;
+    color:#fff;
+    font-size: 32rpx;
+    display: none;
+    opacity: 0;
+}
+

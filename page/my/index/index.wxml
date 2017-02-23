@@ -1,0 +1,40 @@
+
+<!--  头部  -->
+<view class="head">个人中心</view>
+<view class="user-user">
+    <view class="user-sign no-sign"></view>
+    <view class="user-user-box">
+        <navigator class="user-user-photo">
+            <image src="https://www.shicaionline.com//uploads/images/20160725/1469413704_710609.jpg"></image>
+        </navigator>
+        <view class="user-user-name">18555052899</view>
+        <p class="user-edit"><span>编辑资料</span><image src="../../../image/edit.png"></image></p>
+    </view>
+    <view class="user-user-main">
+        <view class="user-my-order"><navigator url=""><image src="../../../image/order.png"></image><span>我的订单</span><p>查看订单</p></navigator></view>
+        <ul class="user-order">
+            <li><navigator url="">待付款</navigator></li>
+            <li><navigator url="">待发货</navigator></li>
+            <li><navigator url="">待收货</navigator></li>
+        </ul>
+        <view class="user-my-assets"><navigator url=""><image src="../../../image/my-assets.png"></image><span>我的资产</span></navigator></view>
+        <ul class="user-assets">
+            <li>
+                <navigator url="">
+                    <span>0</span>
+                    <p>优惠券</p>
+                </navigator>
+            </li>
+            <li>
+                <navigator url="">
+                    <span>0</span>
+                    <p>我的积分</p>
+                </navigator>
+            </li>
+        </ul>
+        <view class="user-user-collection"><navigator url=""><image src="../../../image/my-coll.png"></image><span>我的收藏</span></navigator></view>
+        <view class="user-user-news"><navigator url=""><image src="../../../image/my-news.png"></image><span>消息中心</span></navigator></view>
+        <view class="user-user-server"><navigator url=""><image src="../../../image/server-center.png"></image><span>服务中心</span></navigator></view>
+        <view class="user-set"><navigator url=""><image src="../../../image/my-set.png"></image><span>我的设置</span></navigator></view>
+    </view>
+</view>

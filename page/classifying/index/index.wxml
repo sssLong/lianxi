@@ -1,0 +1,28 @@
+<!-- 头部 -->
+<view class="head">
+    <navigator class="search-son">
+        <image src="../../../image/search.png"></image>
+        <text>搜索商品</text>
+    </navigator>
+</view>
+<!-- 分类  -- >
+<!-- 主要内容  -->
+<view class="class-main">
+    <scroll-view class="main-left" id="class_main_left" style="height:{{mainHeight}}" scroll-y="true">
+        <block wx:for="{{dataOne}}">
+            <view class="main-left-list {{index==now_index?'active':''}}" data-index="{{index}}" bindtap="addActive">{{item.type_name}}</view>
+        </block>
+    </scroll-view>
+    <scroll-view class="main-right" id="class_main_right" style="height:1000rpx" scroll-y="true">
+        <block wx:for="{{dataOne}}">
+            <view class="main-right-list" hidden="{{index==now_index?false:true}}">
+                <block wx:for="{{dataTwo[index]}}">
+                    <navigator>
+                        <image src="{{item.image_path}}"></image>
+                        <text>{{item.type_name}}</text>
+                    </navigator>
+                </block>
+            </view>
+        </block>
+    </scroll-view>
+</view>

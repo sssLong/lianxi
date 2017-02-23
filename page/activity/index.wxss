@@ -1,0 +1,210 @@
+/*  头部  */
+.head{
+    display: box;
+    display: -webkit-box;
+}
+.city-select{
+    color:#ff7e00;
+    font-size: 32rpx;
+    height:66rpx;
+    width:130rpx;
+    margin-top:12rpx;
+    padding-left:12rpx;
+}
+.city-icon{
+    display: inline-block;
+    width:40rpx;
+    height:40rpx;
+    float:left;
+    margin:12rpx 2rpx 0 0;
+}
+.now-city{
+    display: inline-block;
+    float:left;
+    height:66rpx;
+    line-height: 66rpx;
+}
+.head .new-notice {
+    display: block;
+    width: 76rpx;
+    height: 66rpx;
+    margin-top:12rpx;
+    position: relative;
+}
+.new-notice image{
+    display: block;
+    width:48rpx;
+    height:48rpx;
+    margin:8rpx auto auto 18rpx;
+}
+.new-notice text{
+    display: none;
+    width: 12rpx;
+    height: 12rpx;
+    border-radius: 6rpx;
+    background: red;
+    position: absolute;
+    right: 12rpx;
+    top: 4rpx;
+}
+
+.head .search-son {
+    display: block;
+    box-flex: 1.0;
+    -webkit-box-flex: 1.0;
+    width: 67%;
+    height: 66rpx;
+    box-sizing: border-box;
+    border: 2rpx solid #eceae7;
+    border-radius: 4rpx;
+    position: relative;
+    margin-top:12rpx;
+}
+
+.search-son image {
+    display: block;
+    width: 40rpx;
+    height: 40rpx;
+    position: absolute;
+    left: 20rpx;
+    top: 12rpx;
+}
+
+.search-son text {
+    display: block;
+    height: 66rpx;
+    line-height: 66rpx;
+    position: absolute;
+    left: 70rpx;
+    top: 0;
+    color: #b0b0b0;
+    font-size: 34rpx;
+}
+
+/*  banner */
+
+.banner {
+    
+    margin-top:90rpx;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+/*  导航  */
+
+.index-main-all {
+    width: 100%;
+    height: 190rpx;
+    margin-top: 20rpx;
+    background: #fff;
+}
+
+.index-main-list {
+    float: left;
+    width: 25%;
+    height: 100%;
+}
+
+.index-main-icon {
+    display: block;
+    width: 80rpx;
+    height: 80rpx;
+    margin: 28rpx auto 14rpx auto;
+}
+
+.index-main-text {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 28rpx;
+    line-height: 32rpx;
+    color: #000;
+}
+
+
+/* 所有活动  */
+
+.all-activity {
+    width: 100%;
+}
+
+.activity {
+    background: #f5f5f5;
+    margin-top: 20rpx;
+}
+
+.activity-head {
+	width:100%;
+    height: 36rpx;
+    padding: 18rpx 0;
+    color: #000;
+    font-size: 32rpx;
+    background: #fff;
+    margin-bottom: 6rpx;
+}
+
+.head-img {
+    display: block;
+    width: 240rpx;
+    height: 36rpx;
+    margin: 0 auto;
+}
+
+.activity-imgbox {
+   
+}
+
+.activity-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.hot-goods-box{
+	background: #fff;
+	padding-top:10rpx;
+}
+.hot-goods-box::after{
+	display: block;
+	content:"";
+	clear:both;
+}
+.hot-goods-list {
+    width: 30%;
+    height: 240rpx;
+    display: block;
+    margin-left: 2.5%;
+    border: 2rpx solid #ebebeb;
+    box-sizing: border-box;
+    margin-bottom: 20rpx;
+    float: left;
+    
+}
+
+.hot-goods-img {
+    width: 90%;
+    height: 150rpx;
+    display: block;
+    margin: 8rpx auto 0 auto;
+}
+
+.hot-goods-name {
+    width: 100%;
+    text-align: center;
+    font-size: 28rpx;
+    color: #4c4c4c;
+    margin-top: 8rpx;
+    display: block;
+}
+
+.hot-goods-price {
+    width: 100%;
+    text-align: center;
+    font-size: 28rpx;
+    color: #ff7e00;
+    display: block;
+}

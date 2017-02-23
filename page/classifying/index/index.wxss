@@ -1,0 +1,95 @@
+/*  头部  */
+.head .search-son{
+	display: block;
+    width:96%;
+    height: 66rpx;
+    box-sizing: border-box;
+    border: 2rpx solid #eceae7;
+    border-radius: 4rpx;
+    position: relative;
+    margin: 12rpx auto auto 2%;
+}
+
+.search-son image {
+    display: block;
+    width: 40rpx;
+    height: 40rpx;
+    position: absolute;
+    left: 20rpx;
+    top: 12rpx;
+}
+
+.search-son text {
+    display: block;
+    height: 66rpx;
+    line-height: 66rpx;
+    position: absolute;
+    left: 70rpx;
+    top: 0;
+    color: #b0b0b0;
+    font-size: 34rpx;
+}
+
+/* 主要分类  */
+.class-main{
+	margin-top:90rpx;
+	display: box;
+	display: -webkit-box;
+}
+
+.main-left{
+	width: 200rpx;
+    background: #f5f5f5;
+   
+}
+
+.main-left view{
+    width: 100%;
+    font-size: 28rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    box-sizing: border-box;
+    text-align: center;
+    border-left: 2rpx solid #f5f5f5;
+    border-right: 2rpx solid #ddd;
+    border-bottom: 2rpx solid #ddd;
+}
+.main-left .active{
+	border-left: 5px solid #3fa54d;
+    background: white;
+    border-right: none;
+}
+.main-right{
+	-webkit-box-flex: 1.0;
+    background: #fff;
+    
+}
+
+.main-right-list{
+
+}
+
+.main-right-list navigator{
+    margin:16rpx auto 16rpx 8%;
+    width: 38%;
+    float: left;
+    border: 2rpx solid #ddd;
+    box-sizing: border-box;
+}
+
+.main-right-list image{
+	display: block;
+	width: 100%;
+    height: 160rpx;
+}
+
+.main-right-list text{
+	width: 100%;
+	display: block;
+    margin: 0 auto;
+    text-align: center;
+    height: 50rpx;
+    line-height: 50rpx;
+    font-size: 32rpx;
+    background: white;
+}

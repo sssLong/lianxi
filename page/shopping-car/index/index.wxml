@@ -1,0 +1,43 @@
+<!--   头部  -->
+<view class="head">
+    购物车
+    <text class="car-head" wx:if="{{flag}}" bindtap="edit">编辑</text>
+    <text class="car-head" wx:else bindtap="finish">完成</text>
+</view>
+<!--  主要内容  -->
+<view class="car-kind-list">
+    <view class="car-kind-box" wx:for="{{goods}}" wx:key="{{item.id}}">
+        <view class="car-remove" style="display:{{!flag?'flex':'none'}};">
+            <image class="car-remove-icon car-remove-gray" bindtap="removeSelf" src="{{isSelect[index]?removeUrl:noRemoveUrl}}" data-is-remove="{{isSelect[index]}}" data-index="{{index}}"></image>
+        </view>
+        <view class="car-kind-main" index="0" style="width:{{!flag?winWidth-32:winWidth}}px;">
+            <view class="car-food">
+                <view class="car-food-left">
+                    <image class="true" src="{{item.small_image_path}}"></image>
+                    <p><i>{{item.min_qty}}</i><em>{{item.unit_name}}</em>起购</p>
+                </view>
+                <view class="car-food-right">
+                    <view class="car-food-name"><em>{{item.goods_name}}</em></view>
+                    <p class="car-food-intr">单价:<i>{{item.price}}</i>元/<b>{{item.unit_name}}</b></p>
+                    <span class="car-food-price">金额:<i>{{arrTotal[index]}}</i>元</span>
+                </view>
+            </view>
+            <view class="car-food-buy">
+                <ul class="car-food-number">
+                    <li class="some-style car-yellow" bindtap="subQty" data-qty="{{arrQty[index]}}" data-index="{{index}}">-</li>
+                    <input class="some-style car-num" value="{{arrQty[index]}}" type="number" maxlength="3" />
+                    <li class="some-style car-last" bindtap="addQty" data-qty="{{arrQty[index]}}" data-index="{{index}}">+</li>
+                </ul>
+                <view class="car-food-car">删除商品</view>
+            </view>
+        </view>
+    </view>
+</view>
+<!--  批量删除  -->
+<view class="car-remove-area" style="display:{{!flag?'block':'none'}}">
+    <view class="car-remove-son">
+        <view class="car-remove-left">
+            <image class="car-i-gray" src="{{allSelect?removeUrl:noRemoveUrl}}" bindtap="removeAll"></image><span>全选</span></view>
+        <view class="car-remove-right" bindtap="removeGoods"><span>删除</span></view>
+    </view>
+</view>

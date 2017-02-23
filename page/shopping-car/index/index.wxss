@@ -1,0 +1,314 @@
+page{
+    padding-bottom: 120rpx;
+}
+.car-head {
+    display: inline-block;
+    position: absolute;
+    right: 2%;
+    padding: 0 24rpx;
+    color: #000;
+    font-size: 28rpx;
+}
+
+.car-kind-list {
+    width: 100%;
+    background: #f5f5f5;
+    position: relative;
+    margin-top: 92rpx
+}
+
+.car-kind-box {
+    width: 100%;
+}
+.car-kind-box::after{
+    display: block;
+    content:"";
+    clear:both;
+}
+.car-remove {
+    float: left;
+    width: 64rpx;
+    height:370rpx;
+    justify-content:center;
+    align-items:center;
+    background: #f5f5f5;
+    position: relative;
+
+}
+
+.car-remove-icon {
+    display: block;
+    width: 44rpx;
+    height: 44rpx;
+    margin-left:8rpx;
+    /*position: absolute;*/
+}
+
+/*.car-remove-active {
+    background: url(../img/pay-select.png) no-repeat 0 0/24px 24px;
+}
+
+.car-remove-gray {
+    background: url(../img/car-circle.png) no-repeat 0 0/24px 24px;
+}*/
+
+.car-kind-main {
+    width: 100%;
+    margin-bottom: 16rpx;
+    float:left;
+}
+
+.car-food {
+    width: 95%;
+    padding: 24rpx 0;
+    background: white;
+    display: box;
+    display: -webkit-box;
+    margin: 0 auto
+}
+
+.car-food-left {
+    width: 200rpx;
+    height: 100%;
+    position: relative;
+}
+
+.car-food-left image {
+    display: block;
+    width: 200rpx;
+    height: 200rpx;
+    margin-left: 16rpx;
+    border: 2rpx solid #ddd
+}
+
+.car-food-left .car-log {
+    position: absolute;
+    left: 18rpx;
+    top: 0;
+    width: 80rpx;
+    height: 80rpx;
+}
+.car-food-left p {
+    display: block;
+    text-align: center;
+    line-height: 36rpx;
+    font-size: 28rpx;
+    color: red;
+    border: 2rpx solid #ddd;
+    border-top: none;
+    width: 200rpx;
+    margin-left: 16rpx;
+}
+
+.car-food-left p i,
+.car-food-left p em {
+    font-style: normal;
+    font-weight: normal;
+}
+.car-special-log {
+    background: url(../img/special.png) no-repeat 0 0;
+    background-size: 100% 100%;
+}
+
+.car-miao-log {
+    background: url(../img/miaosha.png) no-repeat 0 0;
+    background-size: 100% 100%;
+}
+
+.car-food-right {
+    box-flex: 1.0;
+    -webkit-box-flex: 1.0;
+    height: 100%;
+    margin-left: 40rpx
+}
+
+.car-food-right div {
+    padding-top: 12rpx;
+    font-size: 28rpx
+}
+
+.car-food-right em {
+    font-style: normal;
+    font-size: 36rpx
+}
+
+.car-food-right p {
+    margin-top: 10rpx;
+    color: #666;
+    font-size: 28rpx;
+    line-height: 34rpx
+}
+
+.car-food-right i,
+.car-food-right b {
+    font-style: normal;
+    font-weight: normal
+}
+
+.car-food-right span {
+    display: block;
+    margin-top: 10rpx;
+    color: #ff7e00;
+    font-size: 32rpx
+}
+
+.car-food-buy {
+    width: 95%;
+    margin: 4rpx auto 0 auto;
+    height: 68rpx;
+    background: white;
+    padding-top: 8rpx
+}
+
+.car-food-number {
+    height: 60rpx;
+    float: left;
+    margin-left: 20rpx
+}
+
+.car-food-number .some-style{
+    display: block;
+    height: 100%;
+    line-height: 60rpx;
+    width: 76rpx;
+    font-size: 36rpx;
+    border: 2rpx solid #ddd;
+    border-right: none;
+    float: left;
+    text-align: center;
+    color:#000;
+}
+
+.car-food-number .car-yellow {
+    color: #ff7e00;
+}
+
+.car-food-number .car-last {
+    color: #ff7e00;
+    border-right: 2rpx solid #ddd;
+}
+
+.car-food-car {
+    float: right;
+    height: 60rpx;
+    line-height: 60rpx;
+    padding: 0 6rpx;
+    font-size: 30rpx;
+    text-align: center;
+    color: #ff7e00;
+    margin-right: 30rpx;
+    border: 2rpx solid #ddd
+}
+
+.car-order-box,
+.car-remove-area {
+    width: 100%;
+    height: 120rpx;
+    padding: 16rpx 0;
+    background-color: #f5f5f5;
+    position: fixed;
+    left: 0;
+    bottom: -8rpx;
+    display: none;
+}
+
+.car-go-order,
+.car-remove-son {
+    width: 94%;
+    height: 120rpx;
+    background: white;
+    margin: 0 auto;
+}
+
+.car-remove-left {
+    float: left;
+    height: 120rpx;
+}
+
+.car-remove-left image {
+    display: block;
+    height: 48rpx;
+    width: 48rpx;
+    padding-top:34rpx;
+    float: left;
+    margin-left: 16rpx;
+}
+
+.car-remove-left span {
+    display: block;
+    height: 120rpx;
+    line-height: 120rpx;
+    float: left;
+    font-size: 32rpx;
+    margin-left: 10rpx;
+}
+
+.car-order-left {
+    float: left;
+    margin-top: 22rpx;
+    height: 100%;
+    margin-left: 20rpx
+}
+
+.car-order-left p {
+    line-height: 34rpx;
+    font-size: 32rpx
+}
+
+.car-order-left span {
+    color: #ff7e00
+}
+
+.car-order-right,
+.car-remove-right {
+    float: right;
+    margin-top: 16rpx;
+    margin-right: 20rpx
+}
+
+.car-order-right span,
+.car-remove-right span {
+    display: block;
+    padding: 20rpx 40rpx;
+    font-size: 36rpx;
+    color: #fff;
+    background: #fe9b00
+}
+
+.car-no-goods {
+    display: none;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+   
+}
+
+.car-no-goods .empty-car {
+    width: 200rpx;
+    height: 200rpx;
+    margin: 0 auto;
+}
+
+.car-no-goods p {
+    width: 100%;
+    text-align: center;
+    color: #999;
+    font-size: 24rpx;
+    margin-bottom: 60rpx;
+    margin-top: 20rpx;
+}
+
+.car-no-goods a {
+    display: block;
+    width: 196rpx;
+    height: 68rpx;
+    border: 2rpx solid #ff9024;
+    border-radius: 4rpx;
+    text-align: center;
+    line-height: 68rpx;
+    margin: 20rpx auto 0 auto;
+    color: #ff9024;
+    letter-spacing: 4rpx;
+    font-size: 28rpx;
+    border-radius: 16rpx;
+}
